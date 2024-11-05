@@ -1,7 +1,15 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""This module defines a Rectangle class.
 
+The Rectangle class provides the structure to represent a rectangle.
+It allows the user to define the rectangle's width and height, 
+calculate its area and perimeter, and print a visual representation 
+of the rectangle using the '#' character.
 
+Classes:
+    Rectangle: Defines a rectangle with width, height, area, perimeter, 
+               and string representation methods.
+"""
 class Rectangle:
     """Represent a rectangle."""
 
@@ -43,31 +51,25 @@ class Rectangle:
 
     def area(self):
         """Return the area of the Rectangle."""
-        return (self.__width * self.__height)
+        return self.__width * self.__height
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
-            return (0)
-        return ((self.__width * 2) + (self.__height * 2))
+            return 0
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
-        Represents the rectangle with the # character.
+        Represents the rectangle with the # character. If either width or 
+        height is 0, returns an empty string.
         """
         if self.__width == 0 or self.__height == 0:
-            return ("")
-
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+            return ""
+        return "\n".join(['#' * self.__width for _ in range(self.__height)])
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        rect = "Rectangle(" + str(self.__width)
-        rect += ", " + str(self.__height) + ")"
-        return (rect)_
+        return f"Rectangle({self.__width}, {self.__height})"
+
