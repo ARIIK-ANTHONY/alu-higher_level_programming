@@ -3,5 +3,11 @@
 
 
 class Rectangle:
-        '''Representing a Rectangle.'''
-            pass
+    """
+    This is an empty Rectangle class that defines a rectangle.
+
+    Attributes:
+        None
+    """
+
+    pass
