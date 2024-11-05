@@ -2,7 +2,6 @@
 
 '''Defining a new class.'''
 
-
 class Square:
     '''Representing a new Square.'''
 
