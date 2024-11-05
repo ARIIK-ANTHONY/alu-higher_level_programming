@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+'''
+This module defines a class called Rectangle.
+
+The class allows you to create a rectangle with a specific width and height,
+and provides methods to calculate the area and perimeter. It includes
+validation for the width and height, ensuring that they are non-negative integers.
+'''
+
 
 class Rectangle:
     '''A class to represent a rectangle.'''
@@ -45,3 +53,4 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
