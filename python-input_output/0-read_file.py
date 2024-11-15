@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module provides a function to read a UTF-8 text file and print its contents.
 """
