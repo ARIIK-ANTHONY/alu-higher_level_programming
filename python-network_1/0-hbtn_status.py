@@ -11,7 +11,7 @@ import urllib.request
 import urllib.error
 
 if __name__ == "__main__":
-    # URL to fetch (can change to another URL)
+    # URL to fetch (can change to anoher URL)
     url = "https://intranet.hbtn.io/status"  # Or change this to "http://0.0.0.0:5050/status"
     
     # Set headers to simulate a request from a browser
